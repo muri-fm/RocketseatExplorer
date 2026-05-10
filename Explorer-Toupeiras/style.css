@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+:root {
+    --delay-01: 2s;
+    --delay-02: 4s;
+    --delay-03: 6s;
+    --delay-04: 8s;
+    --delay-05: 10s;
+    --delay-06: 12s;
+    --delay-07: 14s;
+    --delay-08: 16s;
+    --delay-09: 18s;
+    --delay-10: 20s;
+    --delay-11: 22s;
+    --delay-12: 24s;
+    --duration: 1s;
+}
+
+body {
+    background: url("imgs/fundo.svg") no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 24rem 16.8rem 2rem;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 4%;
+}
+
+.hole {
+    height: 17.6rem;
+    width: 21.5%;
+    background-image: url("imgs/toupeira0.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+    transition: all 0.1s;
+}
+
+main div:nth-of-type(1) {
+    animation: showMole var(--duration) ease-in-out var(--delay-02);
+}
+
+main div:nth-of-type(2) {
+    animation: showMole var(--duration) ease-in-out var(--delay-08);
+}
+
+main div:nth-of-type(3) {
+    animation: showMole var(--duration) ease-in-out var(--delay-03);
+}
+
+main div:nth-of-type(4) {
+    animation: showMole var(--duration) ease-in-out var(--delay-07);
+}
+
+main div:nth-of-type(5) {
+    animation: showMole var(--duration) ease-in-out var(--delay-06);
+}
+
+main div:nth-of-type(6) {
+    animation: showMole var(--duration) ease-in-out var(--delay-10);
+}
+
+main div:nth-of-type(7) {
+    animation: showMole var(--duration) ease-in-out var(--delay-12);
+}
+
+main div:nth-of-type(8) {
+    animation: showMole var(--duration) ease-in-out var(--delay-09);
+}
+
+main div:nth-of-type(9) {
+    animation: showMole var(--duration) ease-in-out var(--delay-04);
+}
+
+main div:nth-of-type(10) {
+    animation: showMole var(--duration) ease-in-out var(--delay-01);
+}
+
+main div:nth-of-type(11) {
+    animation: showMole var(--duration) ease-in-out var(--delay-05);
+}
+
+main div:nth-of-type(12) {
+    animation: showMole var(--duration) ease-in-out var(--delay-11);
+}
+
+
+@keyframes showMole {
+    0% {
+        background: url("imgs/toupeira0.svg") no-repeat center center;
+        background-size: contain;
+    }
+
+    17% {
+        background: url("imgs/toupeira1.svg") no-repeat center center;
+        background-size: contain;
+    }
+
+    33% {
+        background: url("imgs/toupeira2.svg") no-repeat center center;
+        background-size: contain;
+    }
+
+    50% {
+        background: url("imgs/toupeira3.svg") no-repeat center center;
+        background-size: contain;
+    }
+
+    67% {
+        background: url("imgs/toupeira4.svg") no-repeat center center;
+        background-size: contain;
+    }
+
+    83% {
+        background: url("imgs/toupeira5.svg") no-repeat center center;
+        background-size: contain;
+    }
+
+    100% {
+        background: url("imgs/toupeira0.svg") no-repeat center center;
+        background-size: contain;
+
+    }
+}
+
+
+@media (max-width: 990px) {
+    body {
+        padding: 16rem 4rem 4rem;
+    }
+
+    .hole {
+        height: 13.6rem;
+        width: 28%;
+    }
+}
+
+@media (max-width: 540px) {
+    body {
+        padding: 12rem 2.4rem 4rem;
+    }
+
+    main {
+        gap: 4%;
+    }
+
+    .hole {
+        height: 8rem;
+        width: 46%;
+    }
+}
